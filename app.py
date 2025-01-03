@@ -7,7 +7,7 @@ st.title('Aplikasi Prediksi Spesies Ikan Berbasis Streamlit')
 
 # Memuat semua model
 try:
-    with open('svmfish.pkl', 'rb') as f:
+    with open('model_svm_ikan.pkl', 'rb') as f:
         model_SVM = pickle.load(f)
 except Exception as e:
     st.error(f"Error loading model: {e}")
