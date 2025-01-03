@@ -3,13 +3,14 @@ import pickle
 import numpy as np
 
 # Judul Aplikasi
-st.title('Prediksi Spesies Ikan')
+st.title('Aplikasi Prediksi Spesies Ikan Berbasis Streamlit')
+
 # Memuat semua model
 try:
-    with open('model_svm_ikan.pkl', 'rb') as f:
-    model_SVM = pickle.load(f)
+    with open('svmfish.pkl', 'rb') as f:
+        model_SVM = pickle.load(f)
 except Exception as e:
-    st.eror(f"Eror loading model: {e}")
+    st.error(f"Error loading model: {e}")
 
 # Dropdown untuk memilih model
 model_choice = st.selectbox(
