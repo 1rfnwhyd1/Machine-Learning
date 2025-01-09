@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Judul Aplikasi
-st.title('Aplikasi Prediksi Spesies Ikan SVM')
+st.title('Aplikasi Prediksi Spesies Ikan SVM by IrfnwhydI_')
 
 # Memuat semua model
 try:
