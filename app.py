@@ -12,12 +12,6 @@ try:
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
-# Dropdown untuk memilih model
-model_choice = st.selectbox(
-    'Pilih Model untuk Prediksi:',
-    ('SVM')  # Menyediakan pilihan model sesuai kebutuhan, Anda bisa menambahkan model lain di sini
-)
-
 # Input untuk setiap fitur ikan
 length = st.number_input('Panjang Ikan (length):', min_value=0.0)
 weight = st.number_input('Berat Ikan (weight):', min_value=0.0)
