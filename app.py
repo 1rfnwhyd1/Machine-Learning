@@ -21,9 +21,6 @@ w_l_ratio = st.number_input('Rasio Berat ke Panjang (w_l_ratio):', min_value=0.0
 if st.button('Prediksi Spesies'):
     features = np.array([[length, weight, w_l_ratio]])
     
-    # Memilih model berdasarkan pilihan pengguna
-    if model_choice == 'SVM':
-        model = model_SVM
     
     prediction = model.predict(features)[0]
     st.success(f'Spesies yang Diprediksi: {prediction}')
